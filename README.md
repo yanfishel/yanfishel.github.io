@@ -1,2 +1,2 @@
-# yanfishel.github.io
-Yan Fishel CV
+### Hi there 👋
+I am Yan Fishel, frontend developer
