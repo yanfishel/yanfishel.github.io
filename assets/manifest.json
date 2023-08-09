@@ -3,12 +3,12 @@
   "name": "Yan Fishel",
   "icons": [
       {
-          "src": "/img/android-chrome-192x192.png?v=9ByOrjd5rd",
+          "src": "/assets/img/android-chrome-192x192.png?v=9ByOrjd5rd",
           "sizes": "192x192",
           "type": "image/png"
       },
       {
-          "src": "/img/android-chrome-256x256.png?v=9ByOrjd5rd",
+          "src": "/assets/img/android-chrome-256x256.png?v=9ByOrjd5rd",
           "sizes": "256x256",
           "type": "image/png"
       }
