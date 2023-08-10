@@ -6,6 +6,10 @@ body {
   font-size: 14px;
 }
 
+a {
+  color: rgba(17, 74, 159, 0.8);
+}
+
 .container {
   max-width:960px
 }
@@ -61,6 +65,12 @@ header ul li a svg {
   fill: #114a9f;
 }
 
+header ul li a img {
+  height: 1.2em;
+  margin:-1px 0.25em 0 0;
+  color: #114a9f;
+}
+
 header ul li:last-child a {
   border-bottom: 0;
 }
@@ -95,8 +105,6 @@ article > h3 {
 }
 
 .firm-desc {
-  /*font-size: 1.2em;*/
-  /*font-weight: bold;*/
   margin: 0 0 0;
 }
 
@@ -175,9 +183,117 @@ footer {
 
 }
 
-/*
 @media print {
   body {
-    font-size: 10px;
+    font-size: 11px !important;
   }
-}*/
+
+  a {
+    color: rgba(17, 74, 159, 1);
+    text-decoration: none;
+  }
+
+  header {
+    padding-top:5px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  header h3 {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+  header h6 {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+
+  .qr-logo {
+    max-width: 87px;
+    margin: 5px 0 0 auto;
+  }
+
+  header ul {
+    max-width: fit-content;
+    margin: 0;
+  }
+  header ul li span {
+    display: none;
+  }
+
+  header ul li a {
+    opacity: 1;
+  }
+
+  header ul li a:after {
+    content: attr(data-title)
+  }
+
+  article > h3 {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 0 5px 0;
+    background: none;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  article a span {
+    display:none;
+  }
+  article a:after {
+    content: attr(href);
+    /*font-size: 11px;
+    line-height: 1.2em;*/
+  }
+
+  .experience-list li {
+    line-height: 1.25em;
+  }
+
+  .tools-block {
+    display: block;
+    margin: 10px 0;
+  }
+  .tools-block:last-child {
+    margin: -10px 0 0;
+  }
+
+  .tools-block img {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+  }
+
+  .tools-block > div {
+    display: inline-block;
+    padding: 0 2px 0 0;
+  }
+
+  .tools-block > div:after {
+    content: attr(data-title)',';
+  }
+
+  hr {
+    margin: 8px 0;
+  }
+
+  .mt-4 {
+    margin-top: 15px !important;
+  }
+  .mb-3 {
+    margin-bottom: 10px !important;
+  }
+  article p {
+    margin-bottom:0 !important;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
