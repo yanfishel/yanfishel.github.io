@@ -223,6 +223,7 @@ footer p {
 }
 .theme-dark .yf-logo {
   background: url("/assets/img/QRYF-invert.png") no-repeat center;
+  background-size: 100%;
 }
 
 
@@ -317,6 +318,7 @@ footer p {
   }
   .theme-dark .yf-logo {
     background: url("/assets/img/QRYF.png") no-repeat center;
+    background-size: 100%;
   }
 
   header ul {
