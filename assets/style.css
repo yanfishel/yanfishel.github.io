@@ -78,6 +78,9 @@ header ul li:last-child a {
   max-width: 115px;
   margin: 0 0 0 auto;
 }
+.qr-logo.dark-mode {
+  display: none;
+}
 .yf-logo {
   width: 115px;
   height: 115px;
@@ -225,6 +228,12 @@ footer p {
   background: url("/assets/img/QRYF-invert.png") no-repeat center;
   background-size: 100%;
 }
+.theme-dark .qr-logo.light-mode {
+  display: none;
+}
+.theme-dark .qr-logo.dark-mode {
+  display: block;
+}
 
 
 
@@ -286,17 +295,43 @@ footer p {
     background: none;
   }
 
-  a {
+  a, .theme-dark a {
     color: rgba(17, 74, 159, 1);
     text-decoration: none;
   }
 
   header {
     padding-top:5px;
+    margin-bottom: 20px;
+  }
+
+  header .order-md-1 {
+    flex: 0 0 auto;
+    width: 50%;
+    order: 1 !important;
+  }
+
+  header .order-md-2 {
+    flex: 0 0 auto;
+    width: 50%;
+    order: 2 !important;
+  }
+
+  header .order-md-2 hr {
+    display: none;
+  }
+
+  .bigscreen-fixed {
+    .col-6:first-child {
+      width: 100px;
+    }
+    .col-6:last-child {
+      width: auto;
+    }
   }
 
   header h1 {
-    margin: 0;
+    margin: 8px 0;
     font-size: 1.3rem;
   }
   header h3 {
@@ -320,6 +355,12 @@ footer p {
     background: url("/assets/img/QRYF.png") no-repeat center;
     background-size: 100%;
   }
+  .theme-dark .qr-logo.light-mode {
+    display: block;
+  }
+  .theme-dark .qr-logo.dark-mode {
+    display: none;
+  }
 
   header ul {
     max-width: fit-content;
@@ -337,6 +378,16 @@ footer p {
     content: attr(data-title)
   }
 
+  .theme-dark header ul li a {
+    color:#114a9f;
+    border-bottom: 1px #ebebeb solid;
+    opacity:0.75;
+  }
+  .theme-dark header ul li a svg {
+    fill: #114a9f;
+  }
+
+
   article > h3 {
     font-size: 0.75rem;
     font-weight: bold;
@@ -345,6 +396,7 @@ footer p {
     padding: 5px 0 5px 0;
     background: none;
     color: #333;
+    margin-top:5px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
   }
