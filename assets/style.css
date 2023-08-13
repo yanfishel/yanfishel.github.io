@@ -242,6 +242,9 @@ footer p {
   header {
     padding-top: 20px;
   }
+  header hr {
+    margin-top: 30px;
+  }
 
   header ul {
     list-style: none;
