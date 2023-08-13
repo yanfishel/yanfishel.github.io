@@ -285,10 +285,20 @@ footer p {
 ** -- PRINT STYLE
 */
 @media print {
+
+  @page {
+    /*size: 210mm 297mm;*/
+    size: A4;
+    /* Chrome sets own margins, we change these printer settings */
+    margin:12mm 10mm 0 10mm;
+  }
+
   body {
-    font-size: 11px !important;
+    font-size: 11.5px !important;
     color: #333;
     background: none;
+    padding: 0;
+    margin: 0;
   }
   .theme-dark body {
     color: #333;
@@ -302,7 +312,7 @@ footer p {
 
   header {
     padding-top:5px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   header .order-md-1 {
