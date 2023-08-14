@@ -115,6 +115,16 @@ article > h3 {
   margin: 0 0 0;
 }
 
+.cert-desc {
+  margin: 0;
+}
+
+.cert-desc img {
+  height: 1em;
+  line-height: 1.3em;
+  display: inline-block;
+}
+
 .experience-list {
   margin-bottom: 0.2em;
 }
@@ -293,7 +303,7 @@ footer p {
     /*size: 210mm 297mm;*/
     size: A4;
     /* Chrome sets own margins, we change these printer settings */
-    margin:12mm 10mm 0 10mm;
+    margin:8mm 10mm 0 10mm;
   }
 
   body {
@@ -410,9 +420,14 @@ footer p {
     background: none;
     color: #333;
     margin-top:0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #ccc;
   }
+
+  article p {
+    line-height: 1.3em;
+  }
+
   article a span {
     display:none;
   }
@@ -433,14 +448,16 @@ footer p {
   }
 
   .tools-block img {
-    display: inline-block;
+    /*display: inline-block;*/
     width: 12px;
     height: 12px;
+    display: none;
   }
 
   .tools-block > div {
-    display: inline-block;
-    padding: 0 2px 0 0;
+    display: inline;
+    line-height: 1.3em;
+    /*padding: 0 2px 0 0;*/
   }
 
   .tools-block > div:after {
@@ -449,6 +466,17 @@ footer p {
 
   hr {
     margin: 8px 0;
+  }
+
+  .cert-desc .col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .cert-desc .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    text-align: end;
   }
 
   .mt-4 {
