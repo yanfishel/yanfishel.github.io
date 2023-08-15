@@ -100,7 +100,7 @@ article > h3 {
 }
 
 .tools-block {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 7px;
   margin: 20px 0;
@@ -440,7 +440,7 @@ footer p {
   }
 
   .tools-block {
-    display: block;
+    display: none;
     margin: 10px 0;
   }
   .tools-block:last-child {
